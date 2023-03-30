@@ -111,6 +111,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  position: relative;
 }
 
 .header-link:is(:hover, :focus) {
@@ -131,9 +132,8 @@ body {
   background: #f38181;
   transition: width 0.5s, left 0.5s;
 }
-
-.header-link:hover::after {
-  width: 100%;
+.header-link:hover:after {
+	width: 100%;
 }
 
 .address-main {
@@ -167,7 +167,7 @@ body {
   background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   text-align: center;
 }
 
@@ -530,9 +530,10 @@ background-color: var(--icon-background-color);
   max-width: calc((100% - 48px)/3);
 }
  
-.prtf-button-link:is(:hover, :focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+.prtf-row-item:is(:hover) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 
 .navigation-row-list {
   text-decoration: none;
