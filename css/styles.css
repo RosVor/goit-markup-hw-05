@@ -1,7 +1,6 @@
 :root{
-  --main-background-color:#FFFFFF;
-  --secondary-background-color:#F4F4FD;
-  --alternative-background-color: #2E2F42;
+  --main-background-color:#FFFFFF; 
+  --alternative-background-color: #2E2F42; 
   --web-color:#4D5AE5;
   --studio-color:#2E2F42; 
   --footer-descr-color:#F4F4FD;
@@ -18,6 +17,9 @@
 }
 
 
+.current {
+
+}
 
 .container {
   width: 1158px;
@@ -116,24 +118,42 @@ body {
 
 .header-link:is(:hover, :focus) {
   color: var(--link-focus-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:is(:hover, :active) {
   color: var(--link-focus-color) ;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link::after {
   content: '';
   width: 0;
   height: 2px;
+  border-color: var(--link-focus-color);
+  border-radius: 2px;
   position: absolute;
-  bottom: -4px;
+  bottom: -20px;
   left: 0;
-  background: #f38181;
+  background: var(--link-focus-color);
   transition: width 0.5s, left 0.5s;
 }
 .header-link:hover:after {
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	width: 100%;
+}
+
+.current::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--link-focus-color)
 }
 
 .address-main {
@@ -155,10 +175,14 @@ body {
 
 .adress-item-link:is(:hover, :focus) {
   color: var(--link-focus-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-item-link:is(:hover, :active) {
   color: var(--link-focus-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solutions {
@@ -198,6 +222,8 @@ body {
 .solutions-button:is(:hover, :focus) {
   color: var(--main-button-color);
   background: var(--secondary-button-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*-----------------------------SOLUTIONS ROW------------------------------*/
 .solutions-row{
@@ -323,6 +349,8 @@ background-color: var(--icon-background-color);
 .team-soc-link:is(:hover, :focus) {
   background-color: var(--secondary-button-color);
   fill: var(--icon-background-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -391,6 +419,8 @@ background-color: var(--icon-background-color);
 .customers-link:is(:hover, :focus) {
   fill: var(--link-focus-color);
   border-color: var(--link-focus-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ---------------------------------FOOTER----------------------- */
 
@@ -468,6 +498,8 @@ background-color: var(--icon-background-color);
 .footer-soc-link:is(:hover, :focus) {
   background: var(--secondary-button-color);
   fill: var(--icon-background-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------------PORTFOLIO---------------------------- */
@@ -504,6 +536,8 @@ background-color: var(--icon-background-color);
 .button-portfolio:is(:hover, :focus) {
   color:var(--alternative-title-color);
   background-color: var(--main-button-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prtf-row-list {
