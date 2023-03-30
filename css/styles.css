@@ -121,6 +121,21 @@ body {
   color: var(--link-focus-color) ;
 }
 
+.header-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background: #f38181;
+  transition: width 0.5s, left 0.5s;
+}
+
+.header-link:hover::after {
+  width: 100%;
+}
+
 .address-main {
 
 }
