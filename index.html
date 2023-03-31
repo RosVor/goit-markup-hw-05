@@ -36,7 +36,7 @@
          <section class="solutions">
           <div class="container container-solutions">
             <h1 class="solutions-title">Effective Solutions<br> for Your Business</h1>
-            <button class="solutions-button" type="button">Order Service</button>
+            <button class="solutions-button" type="button" data-modal-open >Order Service</button>
           </div>
         </section> 
 
@@ -379,15 +379,17 @@
         </div>
       </footer> 
 
-      <div class="backdrop">
+      <div class="backdrop is-hidden" data-modal >
         <div class="modal">
-          <button type="button" class="modal-close-button" >
+          <button type="button" class="modal-close-button" data-modal-close>
             <svg class="modal-close-button-icon" width="8px" height="8px">
               <use href="./images/close-black-18dp.svg"></use>
             </svg>
           </button>
         </div>
       </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 </html>
 
