@@ -684,7 +684,6 @@ margin-bottom: 8px;
 
 .modal-close-button:is(:hover, :focus){
   background-color: var(--link-focus-color);
-  fill: var(--alternative-title-color);
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
