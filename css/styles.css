@@ -652,6 +652,8 @@ margin-bottom: 8px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -661,6 +663,8 @@ margin-bottom: 8px;
   background-color: white;
   top:50%;
   left:50%;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform:translate(-50%, -50%);
 }
 
@@ -685,6 +689,8 @@ margin-bottom: 8px;
 .modal-close-button:is(:hover, :focus){
   background-color: var(--link-focus-color);
   fill: var(--alternative-title-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -696,4 +702,6 @@ margin-bottom: 8px;
 
 .modal-close-button:is(:hover, :focus) .modal-close-button-icon{
   fill: var(--alternative-title-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
