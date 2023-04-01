@@ -650,6 +650,10 @@ margin-bottom: 8px;
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform:translate(-50%, -50%) scale(0);
+}
+
 .modal {
   position: absolute;
   width: 408px;
@@ -657,7 +661,8 @@ margin-bottom: 8px;
   background-color: white;
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%) scale(1);
+  transition:transform 300ms linear;
 }
 
 .modal-close-button{
