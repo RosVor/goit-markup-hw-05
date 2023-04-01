@@ -680,12 +680,12 @@ margin-bottom: 8px;
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: var(--main-title-color);
+  color: var(--main-title-color);
 }
 
 .modal-close-button:is(:hover, :focus){
   background-color: var(--link-focus-color);
-  fill: var(--alternative-title-color);
+  color: var(--alternative-title-color);
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
