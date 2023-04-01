@@ -115,7 +115,7 @@ body {
   letter-spacing: 0.02em;
   position: relative;
   transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);b
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:is(:hover, :focus) {
